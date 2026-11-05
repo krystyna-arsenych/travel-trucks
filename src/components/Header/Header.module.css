@@ -1,0 +1,50 @@
+
+.header{
+    border-bottom: 1px solid var(--badges);
+    background-color: var(--inputs);
+
+}
+
+.container{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 24px 64px;
+
+}
+
+.title{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--main);
+}
+
+.span{
+color: var(--text);
+}
+
+.nav{
+}
+.list{
+display: flex;
+justify-content: center;
+gap: 32px;
+}
+
+.link{
+color: var(--main);
+font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    transition: color var(--transition);
+}
+
+.link:hover{
+    color: var(--text);
+}
+
+.active{
+    color: var(--text);
+}

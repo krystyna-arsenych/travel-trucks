@@ -1,0 +1,46 @@
+.container{
+    background-image: url('/hero.jpg');
+    min-height: 700px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: var(--white);
+    padding: 195px 64px;
+}
+
+.contentContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 40px;
+}
+
+.title{
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 67%;
+        color: var(--inputs);
+}
+
+.text{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 133%;
+    color: var(--inputs);
+}
+
+.btn{
+    background-color: var(--grey-green);
+    border-radius: 200px;
+    padding: 16px 60px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.01em;
+    color: var(--white);
+    transition: background-color var(--transition);
+}
+
+.btn:hover{
+    background-color: var(--green-hover);
+}
