@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Inter, Manrope } from "next/font/google";
 import "./globals.css";
 import Header from "../components/Header/Header";
+import TanStackProvider from "../providers/TanStackProvider";
+
 
 const inter = Inter({
   variable: "--font-inter",
@@ -25,7 +27,11 @@ export default function RootLayout({ children }: {children: React.ReactNode}) {
       className={`${inter.variable} ${manrope.variable} h-full antialiased`}
     >
       <body>
-        <Header></Header>{children}</body>
+        <TanStackProvider>
+          <Header/>
+        {children}
+        </TanStackProvider>
+      </body>
     </html>
   );
 }
