@@ -24,7 +24,7 @@ export interface GetCampers {
   page?: number;
   perPage?: number;
   location?: string;
-  form?: "alcove" | "panel_van" | "integrated" | "semi_integrated";
-  transmission?: "automatic" | "manual";
-  engine?: "diesel" | "petrol" | "hybrid" | "electric";
+  form?: string;
+  transmission?: string;
+  engine?: string;
 }
